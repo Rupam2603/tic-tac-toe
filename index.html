@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe with AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game-container">
+        <h1>Tic-Tac-Toe</h1>
+
+        <div class="controls-panel">
+            <div class="mode-selector">
+                <button class="mode-btn active" id="btn-pvp" aria-label="Player versus Player Mode">PVP</button>
+                <button class="mode-btn" id="btn-pvc" aria-label="Player versus Computer Mode">Play AI</button>
+            </div>
+            <div class="difficulty-selector hidden" id="difficulty-panel">
+                <button class="diff-btn active" id="btn-easy" aria-label="Easy Difficulty">Easy</button>
+                <button class="diff-btn" id="btn-impossible" aria-label="Impossible Difficulty">Impossible</button>
+            </div>
+        </div>
+
+        <h2 id="status-text">Player X's Turn</h2>
+
+        <div id="board">
+            <div class="cell" data-index="0" role="button" aria-label="Cell 1"></div>
+            <div class="cell" data-index="1" role="button" aria-label="Cell 2"></div>
+            <div class="cell" data-index="2" role="button" aria-label="Cell 3"></div>
+            <div class="cell" data-index="3" role="button" aria-label="Cell 4"></div>
+            <div class="cell" data-index="4" role="button" aria-label="Cell 5"></div>
+            <div class="cell" data-index="5" role="button" aria-label="Cell 6"></div>
+            <div class="cell" data-index="6" role="button" aria-label="Cell 7"></div>
+            <div class="cell" data-index="7" role="button" aria-label="Cell 8"></div>
+            <div class="cell" data-index="8" role="button" aria-label="Cell 9"></div>
+        </div>
+
+        <button id="reset-button">Restart Game</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
